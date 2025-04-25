@@ -1,0 +1,10 @@
+{
+  "type": "intuneth:soul_blasting",
+  "category": "misc",
+  "experience": 2.0,
+  "cookingtime": 300,
+  "ingredient": {
+    "item": "minecraft:ancient_debris"
+  },
+  "result": "minecraft:netherite_scrap"
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "intuneth",
+  "version": "${version}",
+  "name": "intuneth",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": ["Lunaticol"],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/intuneth/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["intuitive.netherite.Intuneth"],
+    "client": ["intuitive.netherite.IntunethClient"]
+  },
+  "mixins": [
+    "intuneth.mixins.json",
+    {
+      "config": "intuneth.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.13",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
